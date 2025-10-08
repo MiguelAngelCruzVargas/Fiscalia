@@ -1,0 +1,26 @@
+# Sensibles / credenciales locales
+contrasema.txt
+*.key
+*.cer
+*.pfx
+backend/.env
+backend/.env.local
+web/.env.local
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+web/node_modules/
+web/dist/
+scripts/results/
+
+# Logs / dumps
+*.log
+*.tmp
+*.swp
+
+# IDE
+.vscode/
+.idea/

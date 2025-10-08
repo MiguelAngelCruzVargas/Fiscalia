@@ -1,0 +1,138 @@
+Catálogo de Funcionalidades y 
+ Requisitos de Datos de Fiscal-IA 
+ Este documento detalla cada una de las funcionalidades de la plataforma Fiscal-IA y 
+ especifica con claridad los datos que el usuario debe proporcionar para que cada 
+ herramienta funcione correctamente. 
+ Configuración Inicial de la Cuenta 
+ Antes de utilizar cualquier función, el usuario debe realizar una configuración inicial única. 
+ Funcionalidad  ¿Qué hace?  Datos Requeridos del 
+ Usuario 
+ Creación de Cuenta  Registra al usuario en la 
+ plataforma.  •  Correo electrónico  y 
+ contraseña  para iniciar 
+ sesión. 
+ Configuración del Perfil 
+ Fiscal  Prepara la plataforma para 
+ conectarse al SAT y realizar 
+ los cálculos.  • RFC (Registro Federal de 
+ Contribuyentes). 
+ • Cargar la e.firma 
+ (archivos .cer y .key). 
+ • Ingresar la contraseña de 
+ la clave privada de la 
+ e.firma. 
+ Módulo 1: Cumplimiento Fiscal Automatizado (El Núcleo) 
+ Este módulo está diseñado para automatizar las tareas más repetitivas y esenciales del 
+ cumplimiento fiscal. La mayoría de estas funciones operan de forma automática una vez 
+ completada la configuración inicial. 
+ Funcionalidad  ¿Qué hace?  Datos Requeridos del 
+ Usuario 
+ Descarga Masiva de CFDI  Se conecta al SAT y 
+ descarga automáticamente 
+ todos los XML emitidos y 
+ recibidos.  •  Ninguno (después de la 
+ configuración inicial).  La 
+ función utiliza la e.firma ya 
+ guardada. 
+ Clasificación de Gastos 
+ con IA  Lee los conceptos de los 
+ CFDI de gastos y los 
+ etiqueta automáticamente 
+ (gasolina, papelería, etc.).  • Ninguno. Opera 
+ automáticamente sobre los 
+ CFDI descargados. 
+ • Opcional: El usuario 
+ puede corregir o 
+ re-clasificar un gasto si la 
+ IA se equivoca. 
+ Cálculo de Impuestos 
+ Provisionales  Procesa los CFDI para 
+ determinar la base de ISR y 
+ el IVA a pagar o a favor del 
+ mes.  •  Ninguno.  El cálculo se 
+ realiza de forma 
+ automática con los CFDI. 
+ Generación de DIOT  Prepara la información para 
+ la Declaración Informativa 
+ de Operaciones con 
+ Terceros.  •  Ninguno.  Se genera 
+ automáticamente a partir 
+ de los CFDI con 
+ Complemento de Pago. 
+ Dashboard Financiero 
+ Básico  Muestra gráficas de 
+ ingresos, gastos y la 
+ evolución de los impuestos.  •  Ninguno.  Se alimenta 
+ automáticamente de los 
+ datos de los CFDI. 
+ Módulo 2: Gestión Contable Inteligente 
+ Este módulo requiere una mayor interacción del usuario para enriquecer los datos fiscales 
+ con información operativa y bancaria. 
+ Funcionalidad  ¿Qué hace?  Datos Requeridos del 
+ Usuario 
+ Conciliación Bancaria  Compara los movimientos 
+ del banco con los CFDI 
+ para encontrar pagos, 
+ cobros y discrepancias.  • Subir el estado de cuenta 
+ bancario (en formato CSV o 
+ Excel). 
+ • Confirmar las 
+ asociaciones que la IA 
+ sugiere entre movimientos 
+ y facturas. 
+ Generación de Pólizas 
+ Contables  Crea los registros 
+ contables (pólizas) a partir 
+ de la información fiscal y 
+ bancaria.  •  Ninguno.  Se genera 
+ automáticamente una vez 
+ que la conciliación 
+ bancaria está hecha. 
+ Control de Cuentas por 
+ Cobrar/Pagar  Muestra un listado de 
+ facturas emitidas sin cobro 
+ y facturas recibidas sin 
+ pago.  •  Confirmar manualmente 
+ cuándo una factura ha sido 
+ pagada o cobrada, 
+ especialmente si no hay 
+ CFDI de pago. 
+ Gestión de Activos Fijos  Identifica compras de 
+ activos y calcula su 
+ depreciación fiscal y 
+ contable.  • Identificar y marcar una 
+ compra (un CFDI de gasto) 
+ como "Activo Fijo". 
+ • Proporcionar datos 
+ adicionales como la fecha 
+ de inicio de uso. 
+ Módulo 3: Optimización Estratégica (Premium) 
+ Este módulo utiliza todos los datos acumulados para ofrecer recomendaciones y análisis 
+ proactivos. 
+ Funcionalidad  ¿Qué hace?  Datos Requeridos del 
+ Usuario 
+ Análisis de Deducciones  Escanea todos los gastos 
+ para encontrar 
+ oportunidades de 
+ deducción no 
+ aprovechadas.  •  Ninguno.  Opera sobre 
+ todos los datos ya 
+ existentes en la plataforma. 
+ Simulador de Escenarios 
+ Fiscales  Permite proyectar el 
+ impacto en impuestos de 
+ futuras decisiones de 
+ negocio.  •  Ingresar los datos de la 
+ simulación.  Por ejemplo: 
+ "¿Qué pasa si mis ingresos 
+ aumentan en  $50,000  ?" o 
+ "¿Cómo afecta contratar a 
+ 2 empleados  con un 
+ sueldo de  $15,000  ?". 
+ Asistente Fiscal con IA  Responde preguntas sobre 
+ temas fiscales y contables 
+ basándose en la ley.  •  Escribir la pregunta  en 
+ el chat. Por ejemplo: "¿Los 
+ gastos de viaje al 
+ extranjero son 100% 
+ deducibles?".
